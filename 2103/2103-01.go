@@ -12,6 +12,8 @@ func countPoints(rings string) int {
     }
     
     for _, v := range m {
+        if len(v) < 3 { continue }
+        
         r := false
         g := false
         b := false
